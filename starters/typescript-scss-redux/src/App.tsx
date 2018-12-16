@@ -21,9 +21,19 @@ class App extends React.Component {
                   Learn React
                </a>
                <Link to="/about">About the author</Link>
-               <ul>
-                  <li>{process.env.REACT_APP_ENV_FILE}</li>
-                  <li>{process.env.REACT_APP_SECRET}</li>
+               <ul style={{ textAlign: 'left' }}>
+                  <li>
+                     process.env.NODE_PATH: <b>'{process.env.NODE_PATH}'</b>
+                  </li>
+                  <li>
+                     process.env.REACT_APP_ENV_FILE: <b>'{process.env.REACT_APP_ENV_FILE}'</b>
+                  </li>
+                  <li>
+                     process.env.REACT_APP_SECRET: <b>'{process.env.REACT_APP_SECRET}'</b>
+                  </li>
+                  <li>
+                     process.env.REACT_APP_CUSTOM_VAR: <b>'{process.env.REACT_APP_CUSTOM_VAR}'</b>
+                  </li>
                </ul>
             </header>
          </div>
