@@ -1,6 +1,6 @@
 import createHistory from 'history/createHashHistory';
 import thunk from 'redux-thunk';
-import { ConnectedRouter, routerMiddleware } from 'react-router-redux';
+import { routerMiddleware } from 'react-router-redux';
 import { applyMiddleware, createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import { reducer } from "./reducers";
