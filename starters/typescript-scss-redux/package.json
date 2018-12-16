@@ -7,6 +7,7 @@
     "@types/node": "^10.12.15",
     "@types/react": "^16.7.17",
     "@types/react-dom": "^16.0.11",
+    "eslint": "^5.10.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-redux": "^6.0.0",
@@ -19,9 +20,9 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test --env=jsdom",
+    "start": "NODE_PATH=src react-app-rewired start",
+    "build": "NODE_PATH=src react-app-rewired build",
+    "test": "NODE_PATH=src react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject",
     "precommit": "lint-staged"
   },
@@ -35,8 +36,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@types/react-redux": "^6.0.11",
-    "eslint": "^5.10.0",
     "husky": "^1.2.1",
     "lint-staged": "^8.1.0",
     "node-sass": "^4.11.0",
