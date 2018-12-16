@@ -21,8 +21,7 @@ class App extends React.Component {
           >
             Learn React
           </a>
-
-           <Link exact to="/about">About the author</Link>
+           <Link to="/about">About the author</Link>
         </header>
       </div>
     );
