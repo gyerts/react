@@ -8,21 +8,22 @@ import { Provider } from 'react-redux';
 
 import App from './App';
 import './index.scss';
-import { appStore, history } from "./store";
-
+import { appStore, history } from './store';
 
 ReactDOM.render(
    <Provider store={appStore}>
       <ConnectedRouter store={appStore} history={history}>
          <BrowserRouter>
             <Switch>
-               <Route exact path="/" component={App}/>
+               <Route exact path="/" component={App} />
+               <Route exact path="/about" render={() => <h1>Create by Yuriy Gyerts</h1>} />
                <Route render={() => <h1>404, not found</h1>} />
             </Switch>
          </BrowserRouter>
       </ConnectedRouter>
    </Provider>,
-   document.getElementById('root'));
+   document.getElementById('root'),
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
